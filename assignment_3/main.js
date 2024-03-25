@@ -8,15 +8,15 @@ function checkType() {
   if (value1 && value2 == value3) {
     document.getElementById(
       'result'
-    ).innerHTML = `The triangle is an equilateral triangle.`;
+    ).innerHTML = `The triangle with sides ${value1}, ${value2}, and ${value3} is an equilateral triangle.`;
   } else if (value1 == value2 || value1 == value3 || value2 == value3) {
     document.getElementById(
       'result'
-    ).innerHTML = `The triangle is an isosceles triangle.`;
+    ).innerHTML = `The triangle with sides ${value1}, ${value2}, and ${value3} is an isosceles triangle.`;
   } else if (value1 !== value2 && value1 !== value3 && value2 !== value3) {
     document.getElementById(
       'result'
-    ).innerHTML = `The triangle is a scalene triangle.`;
+    ).innerHTML = `The triangle with sides ${value1}, ${value2}, and ${value3} is a scalene triangle.`;
   }
 }
 
